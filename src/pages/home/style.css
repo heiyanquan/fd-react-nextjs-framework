@@ -1,0 +1,27 @@
+.home-page-wrapper {
+  .carousel-item-img {
+    width: 1440px;
+    margin: 0 auto;
+  }
+  .center-box {
+    width: 1320px;
+    margin: 0 auto;
+    margin-top: 32px;
+    .product-list-item {
+      h3,
+      p {
+        width: 290px;
+      }
+      h3 {
+        color: #0f69af;
+        font-weight: bolder;
+      }
+    }
+    .brand-list-item {
+      h3,
+      p {
+        width: 180px;
+      }
+    }
+  }
+}
