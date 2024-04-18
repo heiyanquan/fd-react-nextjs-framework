@@ -1,3 +1,5 @@
+"use client"
+
 const Page = () => {
   return <div>analytical-chemistry</div>
 }
