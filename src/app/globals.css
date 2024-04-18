@@ -78,3 +78,9 @@ body {
 .white {
   color: white;
 }
+.green {
+  color: #05518d;
+  font-weight: 900;
+  text-decoration: none;
+  cursor: pointer;
+}

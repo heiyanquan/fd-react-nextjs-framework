@@ -2,13 +2,8 @@
 
 import { FC } from "react"
 
-const Page: FC = (props: any) => {
-  return (
-    <div>
-      <header>common layout</header>
-      <main>{props.children}</main>
-    </div>
-  )
+const Layout: FC = (props: any) => {
+  return <>{props.children}</>
 }
 
-export default Page
+export default Layout
