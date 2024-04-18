@@ -1,3 +1,5 @@
+"use client"
+
 import { Carousel, Divider, List } from "antd"
 import "./style.css"
 import Image from "next/image"

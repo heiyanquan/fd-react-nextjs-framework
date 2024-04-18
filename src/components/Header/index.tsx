@@ -1,3 +1,5 @@
+"use client"
+
 import { Button, Divider, Dropdown, Flex, MenuProps, Popover, Space } from "antd"
 import "./style.css"
 import Image from "next/image"

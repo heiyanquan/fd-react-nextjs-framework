@@ -1,7 +1,6 @@
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import type { AppProps } from "next/app"
-import "./globals.css"
 import { ConfigProvider, App } from "antd"
 import zhCN from "antd/locale/zh_CN"
 import dayjs from "dayjs"

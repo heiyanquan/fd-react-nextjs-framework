@@ -1,35 +1,37 @@
-import { EMPTYTEXT } from './constant'
-import { useState, useEffect } from 'react'
-import dayjs from 'dayjs'
-import { isDate } from './tools'
+"use client"
+
+import { EMPTYTEXT } from "./constant"
+import { useState, useEffect } from "react"
+import dayjs from "dayjs"
+import { isDate } from "./tools"
 
 export function hsHandleTableRender(text: string) {
-  return typeof text === 'number' ? text : text || EMPTYTEXT
+  return typeof text === "number" ? text : text || EMPTYTEXT
 }
 export function hsHandleDateYear(timestamp: number | string) {
   let date = EMPTYTEXT
   if (timestamp) {
-    date = dayjs(timestamp).format('YYYY')
+    date = dayjs(timestamp).format("YYYY")
   }
   return date
 }
 export function hsHandleTableDate(timestamp?: number | string) {
   let date = EMPTYTEXT
   if (timestamp) {
-    date = dayjs(timestamp).format('YYYY-MM-DD')
+    date = dayjs(timestamp).format("YYYY-MM-DD")
   }
   return date
 }
 export function hsHandleTableDateTime(timestamp?: number | string) {
   let date = EMPTYTEXT
   if (timestamp) {
-    date = dayjs(timestamp).format('YYYY-MM-DD HH:mm:ss')
+    date = dayjs(timestamp).format("YYYY-MM-DD HH:mm:ss")
   }
   return date
 }
 // 处理表格中返回数据为日期格式的字符串
 export function handleTableShowDate(item: any, key: string) {
-  if (isDate(item[key]) && isNaN(item[key]) && item[key].length !== 10 && item[key].includes('-')) {
+  if (isDate(item[key]) && isNaN(item[key]) && item[key].length !== 10 && item[key].includes("-")) {
     item[key] = hsHandleTableDateTime(item[key])
   }
 }
@@ -61,7 +63,7 @@ export const usePage: any = (doRequest?: () => Promise<any>, initOptions?: SetSt
     showQuickJumper: true,
     showTotal: (total: number) => `共 ${total} 条数据`,
     pageSizeOptions: [10, 20, 30, 40],
-    ...initOptions
+    ...initOptions,
   })
   const [total, setTotal] = useState(0)
 
@@ -96,7 +98,7 @@ export const usePage: any = (doRequest?: () => Promise<any>, initOptions?: SetSt
 
   useEffect(() => {
     doRequest?.().then((res) => {
-      if (typeof res === 'object') {
+      if (typeof res === "object") {
         setTotal(res.total)
       }
     })
@@ -106,14 +108,14 @@ export const usePage: any = (doRequest?: () => Promise<any>, initOptions?: SetSt
     pagination: {
       ...pagination,
       total,
-      onChange
+      onChange,
     },
     total,
     setPagination,
     setTotal,
     onChange,
     resetPage,
-    initPage
+    initPage,
   }
 }
 
@@ -125,7 +127,7 @@ export const useNewPage: any = (doRequest?: () => Promise<any>, searchParams?: a
     showQuickJumper: true,
     showTotal: (total: number) => `共 ${total} 条数据`,
     pageSizeOptions: [10, 20, 30, 40],
-    ...initOptions
+    ...initOptions,
   })
   const [total, setTotal] = useState(0)
 
@@ -159,14 +161,14 @@ export const useNewPage: any = (doRequest?: () => Promise<any>, searchParams?: a
     if (searchParams) {
       if (searchParams.hasInit) {
         doRequest?.().then((res) => {
-          if (typeof res === 'object') {
+          if (typeof res === "object") {
             setTotal(res.total)
           }
         })
       }
     } else {
       doRequest?.().then((res) => {
-        if (typeof res === 'object') {
+        if (typeof res === "object") {
           setTotal(res.total)
         }
       })
@@ -177,13 +179,13 @@ export const useNewPage: any = (doRequest?: () => Promise<any>, searchParams?: a
     pagination: {
       ...pagination,
       total,
-      onChange
+      onChange,
     },
     total,
     setPagination,
     setTotal,
     onChange,
     resetPage,
-    initPage
+    initPage,
   }
 }
