@@ -5,7 +5,7 @@ import "./globals.css"
 import { ConfigProvider, App } from "antd"
 import zhCN from "antd/locale/zh_CN"
 import dayjs from "dayjs"
-import { StaticMethod } from "@hs-admin/utils"
+import { StaticMethod, __DEV__ } from "@hs-admin/utils"
 
 dayjs.locale("zh-cn")
 
@@ -29,9 +29,9 @@ export default function RootApp({ Component, pageProps }: AppProps) {
     >
       <App>
         <StaticMethod />
-        <Header></Header>
+        {!__DEV__ && <Header></Header>}
         <Component {...pageProps} />
-        <Footer></Footer>
+        {!__DEV__ && <Footer></Footer>}
       </App>
     </ConfigProvider>
   )
