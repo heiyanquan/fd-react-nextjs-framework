@@ -1,0 +1,5 @@
+.global-es-page {
+  .btn-box {
+    display: flex;
+  }
+}
