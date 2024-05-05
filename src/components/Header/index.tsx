@@ -85,6 +85,52 @@ const Header: FC = () => {
       ],
     },
   ];
+  const serviceItems: MenuProps['items'] = [
+    {
+      key: '1',
+      label: (
+        <Link target='_self' rel='noopener noreferrer' href='/services'>
+          合同制造
+        </Link>
+      ),
+      children: [
+        {
+          key: 'ADC和生物偶联',
+          label: (
+            <Link
+              target='_self'
+              rel='noopener noreferrer'
+              href='/services/last-child?id=111'
+            >
+              ADC和生物偶联
+            </Link>
+          ),
+        },
+      ],
+    },
+    {
+      key: '2',
+      label: (
+        <Link target='_self' rel='noopener noreferrer' href='/services'>
+          定制产品
+        </Link>
+      ),
+      children: [
+        {
+          key: '大包装和定制包装服务',
+          label: (
+            <Link
+              target='_self'
+              rel='noopener noreferrer'
+              href='/services/last-child?id=111'
+            >
+              大包装和定制包装服务
+            </Link>
+          ),
+        },
+      ],
+    },
+  ];
   const [type, setType] = useState('产品');
   const [lang, setlang] = useState('中文 - ZH');
 
@@ -140,7 +186,7 @@ const Header: FC = () => {
               </Space>
             </a>
           </Dropdown>
-          <Dropdown menu={{ items: productItems }}>
+          <Dropdown menu={{ items: serviceItems }}>
             <a onClick={(e) => e.preventDefault()}>
               <Space>
                 <b>服务</b>
