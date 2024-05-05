@@ -43,9 +43,9 @@ export default function RootLayout({
         >
           <App>
             <StaticMethod />
-            {!__DEV__ && <Header></Header>}
+            {__DEV__ && <Header></Header>}
             <div>{children}</div>
-            {!__DEV__ && <Footer></Footer>}
+            {__DEV__ && <Footer></Footer>}
           </App>
         </ConfigProvider>
       </body>
