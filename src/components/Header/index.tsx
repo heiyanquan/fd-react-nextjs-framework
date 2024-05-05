@@ -134,12 +134,17 @@ const Header: FC = () => {
   const [type, setType] = useState('产品');
   const [lang, setlang] = useState('中文 - ZH');
 
-  useEffect(() => {}, []);
-
   return (
     <div className='common-header-wrapper '>
       <Flex align='center' gap={'middle'} className='px-10 py-6'>
-        <Image src='/img/logo.svg' alt='' width={150} height={48} />
+        <Link href="/">
+          <Image
+            src='/img/logo.svg'
+            alt=''
+            width={150}
+            height={48}
+          />
+        </Link>
         <HsAdminSelect
           value={type}
           options={[
