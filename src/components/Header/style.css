@@ -1,4 +1,25 @@
 .common-header-wrapper {
+  background: linear-gradient(
+    247.62deg,
+    rgba(80, 49, 145, 0.39) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  .search-box {
+    background: rgba(80, 49, 145, 0.2);
+    .ant-input-outlined {
+      background: rgba(80, 49, 145, 0.2);
+      border: none;
+    }
+    .ant-btn-default {
+      background: rgba(80, 49, 145, 0.2);
+    }
+    .ant-btn{
+      border: none;
+    }
+    input {
+      color: #00000080;
+    }
+  }
   .common-nav-wrapper {
     background: #503191;
     color: white;

@@ -7,18 +7,28 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 export default function HomePage() {
-  const [productList, setproductList] = useState(
-    new Array(12).fill({
-      title: '单克隆抗体',
-      desc: '用于 mAb 研究、开发、制造、配方和质量控制的产品和服务。',
-    })
-  );
-  const [brandList, setbrandList] = useState(
-    new Array(6).fill({
-      title: 'Millipore®',
-      desc: '制备、分离、过滤和监测产品及 CTDMO 服务',
-    })
-  );
+  const [productList, setproductList] = useState([
+    {
+      title: 'Monoclonal Antibodies',
+      desc: 'Products and services for mAb research, development, manufacturing, formulation, and quality control.',
+    },
+    {
+      title: 'Quick Order',
+      desc: 'An easy way to quickly purchase products used often',
+    },
+    {
+      title: 'Documents',
+      desc: 'Search for safety data sheets (SDS) and certificates (COA/COO) by product number',
+    },
+    {
+      title: 'Exclusive Savings',
+      desc: 'Shop the handpicked selection of premium products at unbeatable prices.',
+    },
+    {
+      title: 'Contact Us',
+      desc: 'Customer Service',
+    },
+  ]);
   const router = useRouter();
 
   return (
@@ -53,9 +63,16 @@ export default function HomePage() {
         </div>
       </Carousel>
       <div className='center-box'>
-        <h1 className='text-3xl font-bold'>Merck</h1>
+        <h1 className='text-3xl font-bold'>MilliporeSigma</h1>
         <p className='my-8'>
-          携手同行，以科学引领生命健康之道。我们拥有业内广泛的科研产品组合、先进的药物研发和制造能力，以及为传统和新型制药提供CDMO及合同测试服务的完全一体化服务平台。我们致力于以创新产品、高质量服务和数字化方案造福全球、为下一代开创可持续发展的未来。{' '}
+          Together, we impact life and health with science. We offer one of the
+          broadest portfolios in the industry for scientists, best-in-class
+          products for pharmaceutical development and manufacturing, and a fully
+          integrated service organization to support CDMO and contract testing
+          across traditional and novel modalities. Our vision is a world where
+          our innovative products, services, and digital offerings help create
+          solutions for people globally and a sustainable future for generations
+          to come.
         </p>
         <List
           grid={{ gutter: 16, column: 4 }}
@@ -80,26 +97,20 @@ export default function HomePage() {
           )}
         />
         <Divider />
-        <h1 className='text-3xl font-bold mb-8'>探索我们的品牌</h1>
-        <List
-          grid={{ gutter: 16, column: 6 }}
-          dataSource={brandList}
-          renderItem={(item) => (
-            <List.Item>
-              <div className='product-list-item brand-list-item'>
-                <Image
-                  className=''
-                  src='/img/home/brand1.avif'
-                  alt=''
-                  width={180}
-                  height={180}
-                />
-                <h3 className='mt-4 text-base'>{item.title}</h3>
-                <p className='text-base'>{item.desc}</p>
-              </div>
-            </List.Item>
-          )}
-        />
+        <div className='future-insight'>
+          <h1>Curious2024 – Future Insight™ </h1>
+          <h1>Conference</h1>
+          <p>
+            One of the world's leading gatherings on the future of science &
+            technology. Abstracts due March 31st, 2024
+          </p>
+          <div className='submit-btn'>
+            <div>
+              <b></b>
+            </div>
+            Submit Today
+          </div>
+        </div>
       </div>
     </div>
   );
