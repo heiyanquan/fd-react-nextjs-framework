@@ -5,13 +5,18 @@
     rgba(255, 255, 255, 0) 100%
   );
   .search-box {
+    width: 70%;
+    height: 40px;
     background: rgba(80, 49, 145, 0.2);
+    border-radius: 24px;
+    overflow: hidden;
+    padding-left: 12px;
     .ant-input-outlined {
-      background: rgba(80, 49, 145, 0.2);
+      background: transparent;
       border: none;
     }
     .ant-btn-default {
-      background: rgba(80, 49, 145, 0.2);
+      background: transparent;
     }
     .ant-btn{
       border: none;

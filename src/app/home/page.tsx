@@ -33,11 +33,31 @@ export default function HomePage() {
 
   return (
     <div className='home-page-wrapper'>
-      <Carousel effect='fade' autoplay>
+      <Carousel effect='fade' autoplay={false}>
+        <div className='carousel-item carousel-item1'>
+          <Image
+            src='/img/home/banner1.png'
+            alt=''
+            width={815}
+            height={465}
+          />
+          <div className='text-box'>
+            <h1>Empower Your DNA Digestion</h1>
+            <p className='desc'>
+              With our NEW Benzonase Salt Tolerant endonuclease
+            </p>
+            <div className='btn'>
+              <div className='dot'>
+                <i></i>
+              </div>
+              <p>Learn More</p>
+            </div>
+          </div>
+        </div>
         <div>
           <Image
             className='carousel-item-img'
-            src='/img/home/banner1.jpg'
+            src='/img/home/banner2.jpg'
             alt=''
             width={1440}
             height={288}
@@ -46,16 +66,7 @@ export default function HomePage() {
         <div>
           <Image
             className='carousel-item-img'
-            src='/img/home/banner1.jpg'
-            alt=''
-            width={1440}
-            height={288}
-          />
-        </div>
-        <div>
-          <Image
-            className='carousel-item-img'
-            src='/img/home/banner1.jpg'
+            src='/img/home/banner3.jpg'
             alt=''
             width={1440}
             height={288}
