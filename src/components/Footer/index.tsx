@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { FC, memo } from 'react'
 import './style.css'
 
@@ -8,67 +7,67 @@ const Footer: FC = () => {
       <footer className="flex mb-12">
         <div className="jss320">
           <span>支持</span>
-          <a className="jss321" role="link" target="_self" href="/CN/zh/support/customer-support/web-training">
+          <a className="jss321" target="_self" href="/CN/zh/support/customer-support/web-training">
             <span>网站教程</span>
           </a>
-          <a className="jss321" role="link" target="_self" href="/CN/zh/support/customer-support">
+          <a className="jss321" target="_self" href="/CN/zh/support/customer-support">
             <span>客户支持</span>
           </a>
-          <a className="jss321" role="link" target="_self" href="/CN/zh/search">
+          <a className="jss321" target="_self" href="/CN/zh/search">
             <span>安全数据说明书(SDS)</span>
           </a>
-          <a className="jss321" role="link" target="_self" href="/CN/zh/search">
+          <a className="jss321" target="_self" href="/CN/zh/search">
             <span>证书 (COA/COO)</span>
           </a>
-          <a className="jss321" role="link" target="_self" href="/CN/zh/life-science/quality-and-regulatory-management">
+          <a className="jss321" target="_self" href="/CN/zh/life-science/quality-and-regulatory-management">
             <span>质量与法规</span>
           </a>
-          <a className="jss321" role="link" target="_self" href="/CN/zh/support/calculators-and-apps">
+          <a className="jss321" target="_self" href="/CN/zh/support/calculators-and-apps">
             <span>计算和相关 App</span>
           </a>
-          <a className="jss321" role="link" target="_self" href="/CN/zh/collections/webinars">
+          <a className="jss321" target="_self" href="/CN/zh/collections/webinars">
             <span>网上研讨会</span>
           </a>
         </div>
         <div className="jss320">
           <span>订单</span>
-          <a className="jss321" role="link" target="_self" href="/CN/zh/quick-order">
+          <a className="jss321" target="_self" href="/CN/zh/quick-order">
             <span>快速下单</span>
           </a>
-          <a className="jss321" role="link" target="_self" href="/CN/zh/services/custom-products">
+          <a className="jss321" target="_self" href="/CN/zh/services/custom-products">
             <span>定制产品</span>
           </a>
-          <a className="jss321" role="link" target="_self" href="/CN/zh/support/customer-support/after-sales">
+          <a className="jss321" target="_self" href="/CN/zh/support/customer-support/after-sales">
             <span>订单售后</span>
           </a>
-          <a className="jss321" role="link" target="_self" href="/CN/zh/life-science/ecommerce/ecommerce-solutions">
+          <a className="jss321" target="_self" href="/CN/zh/life-science/ecommerce/ecommerce-solutions">
             <span>电子商务解决方案</span>
           </a>
-          <a className="jss321" role="link" target="_blank" rel="noopener" href="https://open.sigmaaldrich.cn/">
+          <a className="jss321" target="_blank" rel="noopener" href="https://open.sigmaaldrich.cn/">
             <span>B2B客户开放平台</span>
           </a>
         </div>
         <div className="jss320">
           <span>公司</span>
-          <a className="jss321" role="link" target="_self" href="/CN/zh/life-science/about-us">
+          <a className="jss321" target="_self" href="/CN/zh/life-science/about-us">
             <span>关于我们</span>
           </a>
-          <a className="jss321" role="link" target="_self" href="/CN/zh/life-science/ssbi">
+          <a className="jss321" target="_self" href="/CN/zh/life-science/ssbi">
             <span>责任</span>
           </a>
-          <a className="jss321" role="link" target="_self" href="/CN/zh/collections/events">
+          <a className="jss321" target="_self" href="/CN/zh/collections/events">
             <span>活动</span>
           </a>
-          <a className="jss321" role="link" target="_self" href="/CN/zh/collections/press">
+          <a className="jss321" target="_self" href="/CN/zh/collections/press">
             <span>新闻稿</span>
           </a>
-          <a className="jss321" role="link" target="_self" href="/CN/zh/life-science/partnership-programs">
+          <a className="jss321" target="_self" href="/CN/zh/life-science/partnership-programs">
             <span>项目计划</span>
           </a>
-          <a className="jss321" role="link" target="_blank" rel="noopener" href="https://www.emdgroup.com/en/careers.html">
+          <a className="jss321" target="_blank" rel="noopener" href="https://www.emdgroup.com/en/careers.html">
             <span>招聘</span>
           </a>
-          <a className="jss321" role="link" target="_self" href="/CN/zh/collections/offices">
+          <a className="jss321" target="_self" href="/CN/zh/collections/offices">
             <span>办事处</span>
           </a>
         </div>
@@ -77,12 +76,12 @@ const Footer: FC = () => {
           <div className="jss322">
             <div className="jss323">
               <a href="/CN/zh" target="_self">
-                <Image src="/img/home/WeChat.avif" alt="WeChat Icon" className="jss335" width="32" height="32" />
+                <img src="/img/home/WeChat.avif" alt="WeChat Icon" className="jss335" width="32" height="32" />
               </a>
             </div>
             <div className="jss323">
               <a href="https://space.bilibili.com/488496232" target="_blank" rel="noopener">
-                <Image src="/img/home/bilibili.avif" alt="Bilibili Icon" className="jss335" width="32" height="32" />
+                <img src="/img/home/bilibili.avif" alt="Bilibili Icon" className="jss335" width="32" height="32" />
               </a>
             </div>
           </div>
@@ -128,41 +127,35 @@ const Footer: FC = () => {
             </span>
           </div>
           <div className="jss332">
-            <a className="jss333" role="link" target="_blank" rel="noopener" href="https://beian.miit.gov.cn">
+            <a className="jss333" target="_blank" rel="noopener" href="https://beian.miit.gov.cn">
               <span>沪ICP备14038167号-3</span>
             </a>
             <span className="jss334">|</span>
-            <a className="jss333" role="link" target="_self" href="/CN/zh/life-science/legal/personal-information-collection-consent-letter">
+            <a className="jss333" target="_self" href="/CN/zh/life-science/legal/personal-information-collection-consent-letter">
               <span>个人信息收集同意书 </span>
             </a>
             <span className="jss334">|</span>
-            <a className="jss333" role="link" target="_self" href="/CN/zh/life-science/legal/privacy-statement">
+            <a className="jss333" target="_self" href="/CN/zh/life-science/legal/privacy-statement">
               <span>数据隐私声明 </span>
             </a>
             <span className="jss334">|</span>
-            <a className="jss333" role="link" target="_self" href="/CN/zh/life-science/legal/site-use-terms">
+            <a className="jss333" target="_self" href="/CN/zh/life-science/legal/site-use-terms">
               <span>网站使用条款</span>
             </a>
             <span className="jss334">|</span>
-            <a className="jss333" role="link" target="_self" href="/CN/zh/life-science/legal/terms-and-conditions">
+            <a className="jss333" target="_self" href="/CN/zh/life-science/legal/terms-and-conditions">
               <span>销售通用条款与条件</span>
             </a>
             <span className="jss334">|</span>
             <a
               className="jss333"
-              role="link"
               target="_blank"
               rel="noopener"
               href="/CN/zh/deepweb/assets/sigmaaldrich/marketing/global/documents/210/486/business-license-hazardous-chemicals-cn.pdf">
               <span>危险化学品经营许可证</span>
             </a>
             <span className="jss334">|</span>
-            <a
-              className="jss333"
-              role="link"
-              target="_blank"
-              rel="noopener"
-              href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009568">
+            <a className="jss333" target="_blank" rel="noopener" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009568">
               <span>沪公网安备 31011502009568号</span>
             </a>
           </div>

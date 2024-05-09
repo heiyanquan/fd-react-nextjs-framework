@@ -1,9 +1,9 @@
-import { FC, memo, useEffect, useState } from "react"
-import type { TableProps } from "antd"
-import { Table } from "antd"
-import { __DEV__, hsHandleTableDate, hsHandleTableDateTime, hsHandleTableRender } from "@hs-admin/utils"
-import "./style.css"
-import type { ColumnsType } from "./use-table"
+import { FC, memo, useEffect, useState } from 'react'
+import type { TableProps } from 'antd'
+import { Table } from 'antd'
+import { __DEV__, hsHandleTableDate, hsHandleTableDateTime, hsHandleTableRender } from '@hs-admin/utils'
+import './style.css'
+import type { ColumnsType } from './use-table'
 
 interface Props extends TableProps<ColumnsType> {
   columns: any[]
@@ -18,13 +18,13 @@ const HsAdminTable: FC<Props> = (props: Props) => {
       setMergeColumns(
         columns.map((item: ColumnsType) => {
           if (!item.render) {
-            if (item.type === "date") {
+            if (item.type === 'date') {
               item.render = (text: string) => <>{hsHandleTableDate(text)}</>
-            } else if (item.type === "datetime") {
+            } else if (item.type === 'datetime') {
               item.render = (text: string) => <>{hsHandleTableDateTime(text)}</>
             } else {
-              if (item.dataIndex?.includes(".")) {
-                const nameList: string[] = item.dataIndex.split(".")
+              if (item.dataIndex?.includes('.')) {
+                const nameList: string[] = item.dataIndex.split('.')
                 item.render = (_text: string, record: any) => {
                   return <>{hsHandleTableRender(record[nameList[0]]?.[nameList[1]])}</>
                 }
@@ -34,7 +34,7 @@ const HsAdminTable: FC<Props> = (props: Props) => {
             }
           }
           return {
-            ...item,
+            ...item
           }
         })
       )

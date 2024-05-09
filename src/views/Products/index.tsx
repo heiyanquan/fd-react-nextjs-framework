@@ -1,5 +1,4 @@
 import { List } from 'antd'
-import Image from 'next/image'
 import { FC, useState } from 'react'
 import './style.css'
 import { useNavigate } from 'react-router-dom'
@@ -26,7 +25,7 @@ const Page: FC = (props: any) => {
         renderItem={(item) => (
           <List.Item>
             <div className="products-list-item" onClick={() => navigate(`/productLastChild?id=111`)}>
-              <Image src={item.img} alt="" width={290} height={174} />
+              <img src={item.img} alt="" width={290} height={174} />
               <h3 className="mt-4 text-base green">{item.title}</h3>
               <p>{item.desc}</p>
             </div>

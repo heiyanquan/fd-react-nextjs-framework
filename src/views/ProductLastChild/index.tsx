@@ -1,5 +1,4 @@
 import { Checkbox, Collapse, CollapseProps, Divider, Flex, List } from 'antd'
-import Image from 'next/image'
 import { FC, useState } from 'react'
 import './style.css'
 import { HsAdminInput, HsAdminSelect, HsAdminTable } from '@hs-admin/base-components'
@@ -116,7 +115,7 @@ const Page: FC = () => {
     <div className="products-last-child-page-wrapper">
       <h1 className="font-black text-2xl mb-4">分析进样针</h1>
       <Flex align="center" gap={'middle'}>
-        <Image src={'/img/products/product-last-child1.avif'} alt="" width={290} height={180} />
+        <img src={'/img/products/product-last-child1.avif'} alt="" width={290} height={180} />
         <div className="text-base">
           选择合适的进样针是确保进样口密封严密、仪器操作正常、进样量准确和长使用寿命的关键。我们的产品品牌根据与应用的相关性、仪器相容性和个人偏好提供进样针。从标准优质
           <a className="green">Hamilton、S</a>GE和VICI® Precision Sampling

@@ -1,5 +1,4 @@
 import { Divider, List, Tabs, TabsProps } from 'antd'
-import Image from 'next/image'
 import { FC, useState } from 'react'
 import './style.css'
 import { useNavigate } from 'react-router-dom'
@@ -56,7 +55,7 @@ const Page: FC = (props: any) => {
   return (
     <div className="services-page-wrapper">
       <div className="banner-box">
-        <Image src={'/img/services/banner.webp'} alt="" width={1440} height={300} />
+        <img src={'/img/services/banner.webp'} alt="" width={1440} height={300} />
       </div>
       <h1 className="font-black text-2xl mb-4">合同制造</h1>
       <p className="mb-8 text-base">

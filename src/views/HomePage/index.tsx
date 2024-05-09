@@ -1,6 +1,5 @@
 import { Carousel, Divider, List } from 'antd'
 import './style.css'
-import Image from 'next/image'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -33,7 +32,7 @@ export default function HomePage() {
     <div className="home-page-wrapper">
       <Carousel effect="fade" autoplay={false}>
         <div className="carousel-item carousel-item1">
-          <Image src="/img/home/banner1.png" alt="" width={815} height={465} />
+          <img src="/img/home/banner1.png" alt="" width={815} height={465} />
           <div className="text-box">
             <h1>Empower Your DNA Digestion</h1>
             <p className="desc">With our NEW Benzonase Salt Tolerant endonuclease</p>
@@ -46,10 +45,10 @@ export default function HomePage() {
           </div>
         </div>
         <div>
-          <Image className="carousel-item-img" src="/img/home/banner2.jpg" alt="" width={1440} height={288} />
+          <img className="carousel-item-img" src="/img/home/banner2.jpg" alt="" width={1440} height={288} />
         </div>
         <div>
-          <Image className="carousel-item-img" src="/img/home/banner3.jpg" alt="" width={1440} height={288} />
+          <img className="carousel-item-img" src="/img/home/banner3.jpg" alt="" width={1440} height={288} />
         </div>
       </Carousel>
       <div className="center-box">
@@ -66,7 +65,7 @@ export default function HomePage() {
           renderItem={(item) => (
             <List.Item>
               <div className="product-list-item" onClick={() => navigate('/products')}>
-                <Image className="" src="/img/home/list-img1.webp" alt="" width={290} height={180} />
+                <img className="" src="/img/home/list-img1.webp" alt="" width={290} height={180} />
                 <h3 className="mt-4 text-base">{item.title}</h3>
                 <p className="text-base">{item.desc}</p>
               </div>

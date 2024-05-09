@@ -1,5 +1,4 @@
 import { Checkbox, Collapse, CollapseProps, Divider, Flex, List } from 'antd'
-import Image from 'next/image'
 import { FC, useState } from 'react'
 import './style.css'
 import { HsAdminInput, HsAdminSelect, HsAdminTable } from '@hs-admin/base-components'
@@ -116,18 +115,16 @@ const Page: FC = () => {
     <div className="services-last-child-page-wrapper">
       <h1 className="font-black text-2xl mb-4">ADC产品表征</h1>
       <Flex align="center" gap={'middle'}>
-        <Image src={'/img/services/product-last-child1.avif'} alt="" width={290} height={180} />
+        <img src={'/img/services/product-last-child1.avif'} alt="" width={290} height={180} />
         <div className="text-base">
-          连接单克隆抗体且可递送高效活性药物成分（HPAPI）的抗体药物偶联物（ADC）本质上非常复杂，因此需要通过对生物疗法进行表征来探究其结构、结合性、纯度和效能。作为您的表征服务合作伙伴，我们可在ADC“裸”药和其药物偶联物中的生物成分方面提供专家指导，通过更安全、可靠和快速的测试，帮助您在关键阶段加快产品的质量决策。
+          连接单克隆抗体且可递送高效活性药物成分（HPAPI）的抗体药物偶联物（ADC）本质上非常复杂，
+          因此需要通过对生物疗法进行表征来探究其结构、结合性、纯度和效能。作为您的表征服务合作伙伴，我们可在ADC“裸”药和其药物偶联物中的生物成分方面提供专家指导，通过更安全、可靠和快速的测试，帮助您在关键阶段加快产品的质量决策。
         </div>
       </Flex>
       <Divider />
       <h2 className="font-black text-xl mb-4">相关产品资源</h2>
       <div>
-        <a href="" className="block green text-base">
-          /CN/zh/technical-documents/protocol/analytical-chemistry/gas-chromatography/general-syringe-care
-        </a>
-        <a href="" className="block green text-base">
+        <a href="/" className="block green text-base">
           活页：Hamilton® 药物分析工具
         </a>
         <p className="text-base">准确的药物分析需要许多耗材。 详细了解 Hamilton® 耗材如何支持制药行业。</p>
