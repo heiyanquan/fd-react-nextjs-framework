@@ -1,5 +1,3 @@
-export * from './area'
-export * from './newArea'
 export { default as AsyncQueue } from './asyncQueue'
 export * from './StaticMethod'
 export { default as StaticMethod } from './StaticMethod'

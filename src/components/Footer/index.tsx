@@ -1,8 +1,6 @@
-"use client"
-
-import Image from "next/image"
-import { FC, memo } from "react"
-import "./style.css"
+import Image from 'next/image'
+import { FC, memo } from 'react'
+import './style.css'
 
 const Footer: FC = () => {
   return (
@@ -155,8 +153,7 @@ const Footer: FC = () => {
               role="link"
               target="_blank"
               rel="noopener"
-              href="/CN/zh/deepweb/assets/sigmaaldrich/marketing/global/documents/210/486/business-license-hazardous-chemicals-cn.pdf"
-            >
+              href="/CN/zh/deepweb/assets/sigmaaldrich/marketing/global/documents/210/486/business-license-hazardous-chemicals-cn.pdf">
               <span>危险化学品经营许可证</span>
             </a>
             <span className="jss334">|</span>
@@ -165,8 +162,7 @@ const Footer: FC = () => {
               role="link"
               target="_blank"
               rel="noopener"
-              href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009568"
-            >
+              href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009568">
               <span>沪公网安备 31011502009568号</span>
             </a>
           </div>

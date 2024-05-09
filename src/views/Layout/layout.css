@@ -1,0 +1,18 @@
+.layout-container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  overflow: hidden;
+  grid-template-rows: auto 1fr;
+  font-family: MicrosoftYaHeiUI, MicrosoftYaHeiUI, monospace;
+
+  .card-show {
+    box-shadow: inset 0px -1px 0px 0px #e6e6e6;
+  }
+
+  .layout-body {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}

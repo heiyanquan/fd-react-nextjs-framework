@@ -1,5 +1,3 @@
-'use client';
-
 /**
  * @description: 存储数据
  * @param {string} key
@@ -8,13 +6,13 @@
  */
 export const setItem = (key: string, value: object | string | number) => {
   if (typeof value === 'object') {
-    value = JSON.stringify(value);
+    value = JSON.stringify(value)
   }
   if (typeof value === 'number') {
-    value = value.toString();
+    value = value.toString()
   }
-  localStorage.setItem(key, value);
-};
+  localStorage.setItem(key, value)
+}
 
 /**
  * @description: 获取数据
@@ -22,13 +20,13 @@ export const setItem = (key: string, value: object | string | number) => {
  * @return {*}
  */
 export const getItem = (key: string) => {
-  const data: string | null = localStorage.getItem(key);
+  const data: string | null = localStorage.getItem(key)
   if (data !== null && isJSON(data)) {
-    return JSON.parse(data);
+    return JSON.parse(data)
   } else {
-    return data;
+    return data
   }
-};
+}
 
 /**
  * @description: 删除指定数据
@@ -36,8 +34,8 @@ export const getItem = (key: string) => {
  * @return {*}
  */
 export const removeItem = (key: string) => {
-  localStorage.removeItem(key);
-};
+  localStorage.removeItem(key)
+}
 
 /**
  * @description: 清空缓存
@@ -45,8 +43,8 @@ export const removeItem = (key: string) => {
  * @return {*}
  */
 export const removeAllItem = () => {
-  localStorage.clear();
-};
+  localStorage.clear()
+}
 
 /**
  * @description: 判断是否为json
@@ -55,9 +53,9 @@ export const removeAllItem = () => {
  */
 function isJSON(str: string): boolean {
   try {
-    const obj = JSON.parse(str);
-    return !!(typeof obj == 'object' && obj);
+    const obj = JSON.parse(str)
+    return !!(typeof obj == 'object' && obj)
   } catch (e) {
-    return false;
+    return false
   }
 }
