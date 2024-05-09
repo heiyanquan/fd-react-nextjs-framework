@@ -1,0 +1,12 @@
+.services-last-child-page-wrapper {
+  width: 1320px;
+  margin: 0 auto;
+  .products-list-item {
+    p {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
+  }
+}

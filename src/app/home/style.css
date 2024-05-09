@@ -1,0 +1,107 @@
+.home-page-wrapper {
+  .carousel-item {
+    .carousel-item-img {
+      width: 1440px;
+      margin: 0 auto;
+    }
+  }
+  .carousel-item1 {
+    position: relative;
+    background: rgba(255, 200, 50, 0.8);
+    img {
+      position: absolute;
+      top: -69px;
+      right: -72px;
+      gap: 0px;
+    }
+    .text-box {
+      position: absolute;
+      top: 127px;
+      left: 48px;
+      h1 {
+        font-family: Lato;
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 57.6px;
+        text-align: left;
+        color: rgba(80, 50, 145, 1);
+      }
+      .desc {
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 34.8px;
+        text-align: left;
+        color: rgba(80, 50, 145, 1);
+        margin-top: 12px;
+      }
+      .btn {
+        display: flex;
+        align-items: center;
+        background: rgba(53, 129, 187, 1);
+        width: 156px;
+        height: 40px;
+        padding: 4.91px 27.5px 5.09px 15px;
+        border-radius: 25px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+        margin-top: 12px;
+        cursor: pointer;
+        .dot {
+          width: 20px;
+          height: 20px;
+          border-radius: 50px;
+          background: rgba(255, 255, 255, 0.5);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          i {
+            display: block;
+            width: 8px;
+            height: 8px;
+            gap: 0px;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 1);
+          }
+        }
+        p {
+          font-family: Lato;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 30px;
+          text-align: left;
+          color: rgba(255, 255, 255, 1);
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+  .center-box {
+    width: 1320px;
+    margin: 0 auto;
+    margin-top: 32px;
+    .product-list-item {
+      h3,
+      p {
+        width: 290px;
+      }
+      h3 {
+        color: #0f69af;
+        font-weight: bolder;
+      }
+    }
+    .future-insight {
+      width: 1281px;
+      height: 300px;
+      margin: 0 auto;
+      gap: 0px;
+      border-radius: 5px 0px 0px 0px;
+      background: linear-gradient(
+          86.86deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(255, 255, 255, 0.5) 100%
+        ),
+        linear-gradient(0deg, rgba(235, 53, 151, 0.8), rgba(235, 53, 151, 0.8));
+      padding: 48px 0 0 34px;
+    }
+  }
+}
